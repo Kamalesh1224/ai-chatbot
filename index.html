@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northstar Labs | Knowledge-Base Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Northstar Labs home">
+        <span class="brand-mark">N</span>
+        <span class="brand-text">Northstar Labs</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#core">Core</a>
+        <a href="#process">Process</a>
+        <a href="#admin">Admin</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Document-backed website chat</p>
+          <h1>Your site chatbot can answer from real company knowledge.</h1>
+          <p class="hero-text">
+            This starter includes a polished chat interface, answers grounded in PDF or text
+            knowledge files, memory for follow-up questions, admin-managed document updates, and
+            topic-aware retrieval across product, support, HR, and general company content.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Book a Demo</a>
+            <button class="button button-secondary" id="open-chatbot" type="button">Try the Chatbot</button>
+          </div>
+          <ul class="hero-proof" aria-label="Core chatbot capabilities">
+            <li>Branded chat UI for your website</li>
+            <li>Persistent admin uploads for knowledge updates</li>
+            <li>Multi-topic retrieval with follow-up memory</li>
+          </ul>
+        </div>
+
+        <div class="hero-card">
+          <div class="metric-card">
+            <span class="metric-label">Answer style</span>
+            <strong>Source-backed</strong>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Knowledge input</span>
+            <strong>Multi-topic</strong>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Admin workflow</span>
+            <strong>Upload + manage</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="core">
+        <div class="section-heading">
+          <p class="eyebrow">Core</p>
+          <h2>The chatbot now centers on your actual knowledge base</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Chat interface</h3>
+            <p>The floating widget now includes a live transcript, quick replies, topic focus controls, source cards, typing feedback, and human handoff capture.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Admin knowledge updates</h3>
+            <p>The new admin section supports persistent knowledge uploads by topic so product, support, HR, and company documents can be managed more intentionally.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Multi-topic retrieval</h3>
+            <p>Questions are routed across topic-aware knowledge collections, helping follow-ups like "what about onboarding?" stay anchored to the right department.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="process">
+        <div class="section-heading">
+          <p class="eyebrow">How It Works</p>
+          <h2>Small footprint, practical behavior</h2>
+        </div>
+        <div class="process-grid">
+          <article>
+            <span class="process-step">01</span>
+            <h3>Organize by topic</h3>
+            <p>The app loads starter content across general, product, support, and HR topics and lets admins upload additional documents into the right bucket.</p>
+          </article>
+          <article>
+            <span class="process-step">02</span>
+            <h3>Retrieve answers</h3>
+            <p>Questions are matched against indexed document chunks, topic signals help narrow the search, and the best snippets are returned with visible sources.</p>
+          </article>
+          <article>
+            <span class="process-step">03</span>
+            <h3>Update continuously</h3>
+            <p>Admins can add new documents over time, while the assistant keeps conversation memory so shorter follow-up questions still resolve against the right context.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="admin">
+        <div class="section-heading">
+          <p class="eyebrow">Admin</p>
+          <h2>Update the knowledge base professionally</h2>
+        </div>
+        <div class="admin-grid">
+          <article class="admin-card">
+            <p class="admin-kicker">Knowledge Manager</p>
+            <h3>Upload new documents by topic</h3>
+            <p class="admin-copy">
+              Use this admin-side workflow for persistent local updates to the demo knowledge base.
+              Choose a topic, upload TXT, MD, JSON, or text-based PDF files, and the chatbot will
+              start using them immediately.
+            </p>
+            <div class="admin-controls">
+              <label class="admin-field">
+                <span>Topic</span>
+                <select id="admin-topic-select">
+                  <option value="general">General</option>
+                  <option value="product">Product</option>
+                  <option value="support">Support</option>
+                  <option value="hr">HR</option>
+                </select>
+              </label>
+              <div class="admin-actions">
+                <button class="button button-primary" id="admin-upload-trigger" type="button">Upload documents</button>
+                <button class="button button-secondary" id="admin-reset-docs" type="button">Remove admin uploads</button>
+              </div>
+            </div>
+            <p class="admin-note" id="admin-upload-status">Starter documents are loaded. Admin uploads will persist in this browser.</p>
+            <input class="sr-only" id="admin-knowledge-upload" type="file" accept=".pdf,.txt,.md,.json" multiple>
+          </article>
+
+          <article class="admin-card">
+            <p class="admin-kicker">Topic Coverage</p>
+            <h3>Keep content separated by department</h3>
+            <p class="admin-copy">
+              Topic-aware knowledge helps the chatbot answer more precisely when product, support,
+              HR, and general company content all live in the same experience.
+            </p>
+            <div class="topic-summary" id="topic-summary" aria-label="Knowledge coverage by topic"></div>
+          </article>
+        </div>
+
+        <div class="admin-panel-grid">
+          <article class="admin-card">
+            <div class="admin-library-header">
+              <div>
+                <p class="admin-kicker">Admin Control Panel</p>
+                <h3>View uploaded documents</h3>
+              </div>
+              <p class="admin-library-note" id="admin-uploaded-count">No admin uploads yet.</p>
+            </div>
+            <div class="admin-uploaded-list" id="admin-uploaded-list" aria-label="Uploaded admin documents"></div>
+          </article>
+
+          <article class="admin-card admin-editor-card">
+            <div class="admin-library-header">
+              <div>
+                <p class="admin-kicker">Document Editor</p>
+                <h3>Update or remove selected content</h3>
+              </div>
+              <p class="admin-library-note admin-selected-doc" id="admin-selected-doc">No document selected</p>
+            </div>
+
+            <form class="admin-editor-form is-empty" id="admin-editor-form">
+              <input id="admin-editor-id" type="hidden">
+
+              <label class="admin-field">
+                <span>Document title</span>
+                <input id="admin-editor-title" type="text" placeholder="Select an uploaded document">
+              </label>
+
+              <label class="admin-field">
+                <span>Topic</span>
+                <select id="admin-editor-topic">
+                  <option value="general">General</option>
+                  <option value="product">Product</option>
+                  <option value="support">Support</option>
+                  <option value="hr">HR</option>
+                </select>
+              </label>
+
+              <label class="admin-field">
+                <span>Content</span>
+                <textarea id="admin-editor-content" rows="12" placeholder="Choose an uploaded document to edit its knowledge content."></textarea>
+              </label>
+
+              <p class="admin-note" id="admin-editor-status">Select an uploaded document to update it.</p>
+
+              <div class="admin-actions">
+                <button class="button button-primary" type="submit">Save changes</button>
+                <button class="button button-secondary" id="admin-cancel-edit" type="button">Clear selection</button>
+              </div>
+            </form>
+          </article>
+        </div>
+
+        <div class="admin-library">
+          <div class="admin-library-header">
+            <div>
+              <p class="admin-kicker">Library</p>
+              <h3>Knowledge inventory</h3>
+            </div>
+            <p class="admin-library-note">Starter documents are read-only. Admin uploads can be edited or removed from the control panel.</p>
+          </div>
+          <div class="admin-doc-list" id="admin-doc-list" aria-label="Knowledge documents"></div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>What this starter is ready for</h2>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>Can it answer from company documents?</h3>
+            <p>Yes. It loads a default knowledge base from local text files, supports persistent admin uploads, and can still import temporary session documents through the chat widget.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can it separate topics like HR and support?</h3>
+            <p>Yes. Documents can be grouped by topic, the assistant can auto-route questions, and admins can manually focus the chat on a specific topic when needed.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can a visitor still reach a human?</h3>
+            <p>Yes. The human handoff form stays available when a visitor asks for a person or needs follow-up beyond the knowledge base.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to tailor this for your company?</h2>
+        </div>
+        <div class="contact-card">
+          <p>Email: hello@northstarlabs.co</p>
+          <p>Phone: +1 (415) 555-0138</p>
+          <p>Hours: Monday to Friday, 9:00 AM to 6:00 PM Pacific</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <button class="chat-toggle" id="chat-toggle" aria-expanded="true" aria-controls="chatbot-panel">
+    <span class="chat-toggle-label">Chat with us</span>
+  </button>
+
+  <aside class="chatbot-panel" id="chatbot-panel" aria-label="Website chatbot">
+    <div class="chatbot-header">
+      <div>
+        <p class="chatbot-title">Northstar Assistant</p>
+        <p class="chatbot-status">Multi-topic knowledge mode</p>
+      </div>
+      <button class="chatbot-close" id="chatbot-close" type="button" aria-label="Close chat">&times;</button>
+    </div>
+
+    <div class="chatbot-body">
+      <div class="chatbot-toolbar">
+        <div class="toolbar-row">
+          <p class="toolbar-pill" id="knowledge-status">Loading knowledge base...</p>
+          <div class="toolbar-actions">
+            <button class="toolbar-button" id="upload-knowledge-trigger" type="button">Load PDF / Text</button>
+            <button class="toolbar-button" id="clear-memory" type="button">Clear Memory</button>
+          </div>
+        </div>
+        <p class="toolbar-note">Chat uploads are session-only. Use the admin section for persistent topic-based knowledge updates.</p>
+        <div class="topic-toolbar">
+          <p class="topic-toolbar-label">Chat focus</p>
+          <div class="topic-filters" id="topic-filters" aria-label="Topic filters"></div>
+        </div>
+        <input class="sr-only" id="knowledge-upload" type="file" accept=".pdf,.txt,.md,.json" multiple>
+        <div class="knowledge-docs" id="knowledge-docs" aria-label="Loaded documents"></div>
+        <div class="memory-strip" id="memory-strip">Memory is empty.</div>
+      </div>
+
+      <div class="chatbot-messages" id="chatbot-messages" aria-live="polite"></div>
+
+      <section class="chatbot-suggestions-block" id="chatbot-suggestions-block" aria-label="Quick replies">
+        <p class="chatbot-suggestions-title">Quick replies</p>
+        <div class="chatbot-suggestions" id="chatbot-suggestions" aria-label="Quick replies"></div>
+      </section>
+
+      <form class="lead-card hidden" id="lead-form">
+        <p class="lead-title">Request a human follow-up</p>
+        <label>
+          <span>Name</span>
+          <input id="lead-name" name="name" type="text" placeholder="Your name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input id="lead-email" name="email" type="email" placeholder="you@company.com" required>
+        </label>
+        <label>
+          <span>How can we help?</span>
+          <textarea id="lead-message" name="message" rows="3" placeholder="Tell us what you need" required></textarea>
+        </label>
+        <button class="button button-primary button-block" type="submit">Send request</button>
+        <p class="lead-note" id="lead-status"></p>
+      </form>
+    </div>
+
+    <form class="chatbot-input-row" id="chat-form">
+      <label class="sr-only" for="chat-input">Type a message</label>
+      <input id="chat-input" type="text" placeholder="Ask a question about your knowledge base..." autocomplete="off">
+      <button class="button button-primary" type="submit">Send</button>
+    </form>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

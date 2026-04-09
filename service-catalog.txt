@@ -1,0 +1,7 @@
+Northstar Labs offers website redesigns, landing page builds, knowledge-base chatbots, CRM-connected lead capture, onboarding content systems, and lightweight analytics dashboards. Projects are designed to improve response time, reduce repetitive support work, and make high-intent visitors easier to convert.
+
+The chatbot service includes a branded chat interface, retrieval from text or PDF knowledge files, visible source snippets, and conversation memory so short follow-up questions still make sense. Example knowledge sources include onboarding guides, pricing notes, support policies, implementation checklists, and internal FAQ documents.
+
+For companies that already have content in PDFs, text files, Markdown, or JSON exports, the chatbot can index that material and answer from the most relevant sections. If a document does not contain a reliable answer, the preferred behavior is to say that clearly and route the visitor to a person.
+
+Implementation can also include custom prompts, lead capture forms, escalation rules, and analytics around unanswered questions so the knowledge base gets better over time.

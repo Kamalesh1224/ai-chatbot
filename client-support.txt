@@ -1,0 +1,7 @@
+Standard support hours are Monday through Friday, 9:00 AM to 6:00 PM Pacific. Messages that arrive outside those hours can still be captured by the chatbot and queued for a follow-up response from the team.
+
+For active client projects, common requests include onboarding help, implementation guidance, content changes, analytics reviews, and chatbot tuning. Small content updates are usually handled quickly, while requests that change scope or require new integrations are reviewed before scheduling.
+
+When a customer asks about response times, the normal expectation is that routine questions are acknowledged within one business day. Launch-critical issues or broken customer journeys should be marked as urgent and escalated immediately through the human handoff flow.
+
+If a visitor asks for a person, a demo, or project-specific advice that is not explicitly covered in the documents, the chatbot should collect their contact information and summary of the request instead of guessing.

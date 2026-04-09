@@ -1,0 +1,9 @@
+Northstar Labs uses a remote-first operating model with core collaboration hours from 10:00 AM to 3:00 PM Pacific. Outside those shared hours, employees are expected to keep calendars current and communicate handoffs clearly across time zones.
+
+Full-time employees receive paid time off, local holidays, and a flexible sick leave policy. Vacation requests should be submitted in advance through the team planning workflow, and extended leave should be coordinated with the employee's manager and people operations contact.
+
+New hires go through a structured onboarding plan that covers company context, team introductions, security basics, tooling access, and role-specific goals for the first thirty days. Managers are responsible for making sure each new employee has a documented ramp plan before the start date.
+
+People operations also manages recruiting coordination, interview scheduling, policy questions, and benefits guidance. Questions about compensation changes, personal employee matters, or confidential cases should always be escalated to a human instead of answered speculatively by the chatbot.
+
+When HR material is added to the knowledge base, it should stay clearly separated from product and support documentation. Topic-aware retrieval is important because a short follow-up such as "what about onboarding?" could mean employee onboarding in an HR context or customer onboarding in a product context.

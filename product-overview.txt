@@ -1,0 +1,9 @@
+Northstar Assistant is designed as a lightweight knowledge-backed chat experience for marketing, product, and client-facing teams. The product combines a branded website widget, document retrieval, conversation memory, quick replies, and a clear fallback when the knowledge base does not contain a reliable answer.
+
+The retrieval flow is intentionally simple and practical. Documents are split into readable chunks, indexed in the browser, and scored against the user's question. The assistant responds with the strongest matching snippets and visible sources so visitors can see where the answer came from.
+
+Product teams can use the assistant to answer common questions about onboarding, features, supported file types, implementation steps, and escalation paths. When a question spans multiple areas such as product setup and support policy, the preferred behavior is to keep topic context stable and avoid mixing unrelated answers.
+
+The admin workflow allows operators to upload new knowledge documents and organize them by topic. Example topics include product, support, human resources, and general company information. Topic-aware knowledge helps the assistant stay precise when multiple departments share the same bot experience.
+
+If the product cannot find a strong answer, it should say that directly instead of guessing. Unanswered questions should either prompt a more specific query, suggest another document, or route the visitor to a human follow-up depending on the situation.

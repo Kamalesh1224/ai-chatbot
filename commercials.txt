@@ -1,0 +1,7 @@
+Discovery engagements usually start at 2500 US dollars. Broader website or chatbot implementations are scoped after discovery because cost depends on the number of pages, the amount of source content, integration needs, and the review process on the client side.
+
+Most website and chatbot projects take between two and six weeks once the final scope is approved. Fast projects generally have a small number of pages and a clean knowledge base. Longer timelines usually involve multiple reviewers, CRM integrations, or a larger set of support documents to organize.
+
+Onboarding typically starts with a kickoff call, access collection, and review of existing content. After that, Northstar Labs prepares a delivery plan covering design direction, knowledge ingestion, testing, and launch checkpoints. Clients usually receive a single point of contact throughout the implementation.
+
+If a prospect asks for exact pricing before discovery, the chatbot should explain the starting point, mention that custom scope affects the final quote, and invite them to request a human follow-up for a tailored estimate.

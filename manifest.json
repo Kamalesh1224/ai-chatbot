@@ -1,0 +1,52 @@
+{
+  "suggestions": [
+    "What services do you offer?",
+    "How does the product handle knowledge retrieval?",
+    "What are your support hours?",
+    "What is the PTO policy?"
+  ],
+  "documents": [
+    {
+      "id": "company-overview",
+      "title": "Company Overview",
+      "path": "knowledge-base/company-overview.txt",
+      "type": "text",
+      "topic": "general"
+    },
+    {
+      "id": "product-overview",
+      "title": "Product Overview",
+      "path": "knowledge-base/product-overview.txt",
+      "type": "text",
+      "topic": "product"
+    },
+    {
+      "id": "service-catalog",
+      "title": "Service Catalog",
+      "path": "knowledge-base/service-catalog.txt",
+      "type": "text",
+      "topic": "product"
+    },
+    {
+      "id": "client-support",
+      "title": "Client Support",
+      "path": "knowledge-base/client-support.txt",
+      "type": "text",
+      "topic": "support"
+    },
+    {
+      "id": "hr-handbook",
+      "title": "HR Handbook",
+      "path": "knowledge-base/hr-handbook.txt",
+      "type": "text",
+      "topic": "hr"
+    },
+    {
+      "id": "commercials",
+      "title": "Commercials",
+      "path": "knowledge-base/commercials.txt",
+      "type": "text",
+      "topic": "general"
+    }
+  ]
+}

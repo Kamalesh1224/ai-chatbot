@@ -1,0 +1,7 @@
+Northstar Labs builds customer-facing websites, internal automation flows, and knowledge-backed chatbot experiences for small and mid-sized businesses. The team typically supports companies that want faster lead response, clearer onboarding, and a better support experience without adding more manual work.
+
+Most projects begin with a short discovery sprint. During discovery, Northstar Labs reviews the current website, existing support content, frequently asked questions, and the operational bottlenecks that slow down marketing or service teams. The output is usually a recommended scope, implementation sequence, and success metrics for launch.
+
+The company prefers practical implementations over large custom platforms. A typical engagement combines a branded front-end experience, a searchable knowledge base, form capture for human handoff, and analytics that show what visitors ask most often.
+
+Northstar Labs works remotely with clients across multiple regions, but most direct support hours are aligned to the Pacific time zone. For complex requests or client-specific approvals, the chatbot should offer a human follow-up instead of inventing an answer.
