@@ -1,5 +1,7 @@
 # Northstar Labs Knowledge-Base Chatbot
 
+> A knowledge-based chatbot with admin-controlled content and context-aware responses.
+
 A polished website chatbot demo with source-backed answers, multi-topic retrieval, stronger follow-up handling, and a professional admin workflow for managing knowledge updates directly in the browser.
 
 ## Screenshots
@@ -24,6 +26,25 @@ A polished website chatbot demo with source-backed answers, multi-topic retrieva
 - Admin control panel to view uploaded docs, update content, and delete saved uploads
 - Read-only starter document inventory plus session-only chat uploads for testing
 
+##screenshots
+
+![Homepage and live chatbot](screenshots/homepage-chat.png)
+![Admin control panel](screenshots/admin-section.png)
+
+## 🛠 Tech Stack
+
+- JavaScript (Node.js)
+- HTML, CSS
+- Browser-based storage (localStorage)
+
+## 📌 Use Case
+
+- Customer support chatbot  
+- FAQ automation  
+- Internal knowledge assistant  
+- HR / product query handling
+
+  
 ## Admin workflow
 
 The admin section now supports three distinct tasks:
